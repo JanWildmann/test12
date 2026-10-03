@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-slate-50" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anmeldung | SportKurseLive.de</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
+<html class="h-full bg-[#f8fafc]" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kursplatz sichern | SportKurseLive.de</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#14b8a6',
+              green: '#22c55e',
+              blue: '#3b82f6',
+              dark: '#0f172a'
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2 text-slate-900 hover:text-emerald-600 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <span class="font-semibold text-sm">Zurück</span>
+            </a>
+            <div class="font-bold text-lg tracking-tight">
+                SportKurse<span class="text-emerald-500">Live</span>
+            </div>
+            <div class="w-16"></div> <!-- Spacer for centering -->
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-2xl mx-auto w-full px-4 py-8">
+        
+        <!-- Clean Hero -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-extrabold text-slate-900 mb-2">Sichere deinen Kursplatz</h1>
+            <p class="text-slate-500 text-sm">100% zertifiziert nach § 20 SGB V. Bis zu 100% Erstattung durch deine Krankenkasse.</p>
+        </div>
+
+        <form id="booking-form" class="space-y-6" onsubmit="event.preventDefault(); alert('Vielen Dank! Deine Anmeldung war erfolgreich. Du erhältst in Kürze eine Bestätigung per E-Mail.'); window.location.href='../index.html';">
+            
+            <!-- 1. Kursauswahl -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <span class="bg-emerald-100 text-emerald-700 w-6 h-6 rounded-full flex items-center justify-center text-xs">1</span> 
+                    Kurs wählen
+                </h2>
+                <div class="space-y-3">
+                    <label class="flex items-center justify-between p-4 border-2 border-emerald-500 bg-emerald-50 rounded-xl cursor-pointer transition">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="course" value="rueckenfit" checked class="w-5 h-5 text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <div>
+                                <p class="font-bold text-sm text-slate-900">Rückenfit <span class="ml-2 inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-emerald-200 text-emerald-800">Bestseller</span></p>
+                                <p class="text-xs text-slate-500">10 Einheiten à 60 Min • Live via Zoom</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-slate-900">149 €</span>
+                    </label>
+
+                    <label class="flex items-center justify-between p-4 border-2 border-slate-200 hover:border-emerald-300 rounded-xl cursor-pointer transition">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="course" value="rueckenfit_pilates" class="w-5 h-5 text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <div>
+                                <p class="font-bold text-sm text-slate-900">Rückenfit mit Pilates</p>
+                                <p class="text-xs text-slate-500">10 Einheiten à 60 Min • Live via Zoom</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-slate-900">149 €</span>
+                    </label>
+
+                    <label class="flex items-center justify-between p-4 border-2 border-slate-200 hover:border-emerald-300 rounded-xl cursor-pointer transition">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="course" value="ganzkoerper" class="w-5 h-5 text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <div>
+                                <p class="font-bold text-sm text-slate-900">Ganzkörpertraining</p>
+                                <p class="text-xs text-slate-500">10 Einheiten à 60 Min • Live via Zoom</p>
+                            </div>
+                        </div>
+                        <span class="font-bold text-slate-900">149 €</span>
+                    </label>
+                </div>
+
+                <div class="mt-5 pt-5 border-t border-slate-100">
+                    <label class="block text-sm font-semibold text-slate-700 mb-2">Starttermin (Wochentag)</label>
+                    <select class="w-full rounded-xl border-slate-300 bg-slate-50 py-3 px-4 text-sm focus:border-emerald-500 focus:ring-emerald-500" required>
+                        <option value="di_1830">Dienstags 18:30 Uhr (Start: 07. April) - 4 freie Plätze</option>
+                        <option value="do_1900">Donnerstags 19:00 Uhr (Start: 09. April) - Fast voll</option>
+                        <option value="sa_1000">Samstags 10:00 Uhr (Start: 11. April) - 6 freie Plätze</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- 2. Persönliche Daten -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <span class="bg-emerald-100 text-emerald-700 w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span> 
+                    Deine Daten
+                </h2>
+                
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Vorname</label>
+                        <input type="text" placeholder="Anna" required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Nachname</label>
+                        <input type="text" placeholder="Müller" required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">E-Mail</label>
+                    <input type="email" placeholder="anna@beispiel.de" required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                    <p class="text-[10px] text-slate-500 mt-1">Hierhin senden wir den Zoom-Link.</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Geburtsdatum</label>
+                        <input type="date" required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                        <p class="text-[10px] text-slate-500 mt-1">Pflicht für die Krankenkasse.</p>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Telefon (opt.)</label>
+                        <input type="tel" placeholder="0171 1234567" class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-5 border-t border-slate-100">
+                    <h3 class="text-sm font-semibold text-slate-800 mb-3">Versandadresse für Gratis-Theraband</h3>
+                    <div class="grid grid-cols-3 gap-3 mb-3">
+                        <div class="col-span-2">
+                            <input type="text" placeholder="Straße" required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Nr." required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div>
+                            <input type="text" placeholder="PLZ" required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                        </div>
+                        <div class="col-span-2">
+                            <input type="text" placeholder="Ort" required class="w-full rounded-xl border-slate-300 py-2.5 px-3 text-sm focus:border-emerald-500 focus:ring-emerald-500">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Bezahlung -->
+            <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <span class="bg-emerald-100 text-emerald-700 w-6 h-6 rounded-full flex items-center justify-center text-xs">3</span> 
+                    Bezahlung
+                </h2>
+                
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 mb-5">
+                    <div class="flex justify-between text-sm text-slate-600 mb-1">
+                        <span>Kursgebühr (10 Wochen)</span>
+                        <span class="font-semibold text-slate-900">149,00 €</span>
+                    </div>
+                    <div class="flex justify-between text-sm text-emerald-600 font-medium mb-3">
+                        <span>Krankenkassen-Erstattung</span>
+                        <span>bis zu -149,00 €</span>
+                    </div>
+                    <div class="flex justify-between items-center pt-3 border-t border-slate-200">
+                        <span class="font-bold text-slate-900">Heute zu zahlen</span>
+                        <span class="text-xl font-extrabold text-emerald-600">149,00 €</span>
+                    </div>
+                </div>
+
+                <div class="space-y-3 mb-6">
+                    <label class="flex items-center justify-between p-3 border-2 border-emerald-500 bg-emerald-50 rounded-xl cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="payment" value="paypal" checked class="w-4 h-4 text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <span class="font-semibold text-sm text-slate-900">PayPal</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">Käuferschutz</span>
+                    </label>
+
+                    <label class="flex items-center justify-between p-3 border border-slate-200 hover:border-emerald-300 rounded-xl cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="payment" value="sepa" class="w-4 h-4 text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <span class="font-semibold text-sm text-slate-900">SEPA Lastschrift</span>
+                        </div>
+                    </label>
+                    
+                    <label class="flex items-center justify-between p-3 border border-slate-200 hover:border-emerald-300 rounded-xl cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <input type="radio" name="payment" value="klarna" class="w-4 h-4 text-emerald-600 focus:ring-emerald-500 border-slate-300">
+                            <span class="font-semibold text-sm text-slate-900">Klarna (Später bezahlen)</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="space-y-3 mb-6">
+                    <label class="flex items-start gap-2 text-xs text-slate-600 cursor-pointer">
+                        <input type="checkbox" required class="mt-0.5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+                        <span>Ich akzeptiere die <a href="../pages/sportkurselive.de_allgemeine_gesch_ftsbedingungen.html" class="text-emerald-600 hover:underline">AGB</a> & <a href="../pages/sportkurselive.de_datenschutzerkl_rung.html" class="text-emerald-600 hover:underline">Datenschutzbestimmungen</a>.</span>
+                    </label>
+                    <label class="flex items-start gap-2 text-xs text-slate-600 cursor-pointer">
+                        <input type="checkbox" required class="mt-0.5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+                        <span>Ich bestätige, dass ich für die Erstattung an mind. 80% der Termine teilnehmen muss.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full flex items-center justify-center gap-2 py-4 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-lg shadow-emerald-600/30 transition-all active:scale-95">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    Zahlungspflichtig buchen
+                </button>
+                <p class="text-center text-[10px] text-slate-400 mt-3 flex items-center justify-center gap-1">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                    SSL verschlüsselte und sichere Übertragung
+                </p>
+            </section>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs mt-auto">
+        <div class="flex justify-center gap-4 mb-3">
+            <a href="../pages/sportkurselive.de_impressum.html" class="hover:text-white transition">Impressum</a>
+            <a href="../pages/sportkurselive.de_datenschutzerkl_rung.html" class="hover:text-white transition">Datenschutz</a>
+            <a href="../pages/sportkurselive.de_allgemeine_gesch_ftsbedingungen.html" class="hover:text-white transition">AGB</a>
+        </div>
+        <p>&copy; 2026 SportKurseLive.de • Zertifiziert nach § 20 SGB V</p>
+    </footer>
+
+    <!-- Interactive script to highlight selected radio buttons -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            function handleRadioGroup(name, activeClasses, inactiveClasses) {
+                const inputs = document.querySelectorAll(`input[name="${name}"]`);
+                inputs.forEach(input => {
+                    input.addEventListener('change', () => {
+                        inputs.forEach(el => {
+                            const container = el.closest('label');
+                            if (el.checked) {
+                                container.classList.add(...activeClasses);
+                                container.classList.remove(...inactiveClasses);
+                            } else {
+                                container.classList.remove(...activeClasses);
+                                container.classList.add(...inactiveClasses);
+                            }
+                        });
+                    });
+                });
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="typography">
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+<style data-purpose="layout">
+    .custom-radio:checked + label {
+      border-color: #14b8a6;
+      background-color: #f0fdfa;
+    }
+    .custom-radio:checked + label .check-icon {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body class="min-h-full flex flex-col text-slate-800 antialiased selection:bg-teal-100">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-40 bg-white border-b border-slate-100 shadow-sm" data-purpose="site-header">
+<div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
+<!-- Logo Container -->
+<a aria-label="SportKurseLive.de Startseite" class="flex items-center gap-2.5 focus:outline-none" href="../index.html">
+<img alt="SportKurseLive Rücken Logo" class="w-10 h-10 rounded-xl shadow-md shadow-teal-500/20 flex-shrink-0" src="../assets/sportkurselive_r_cken_logo.png"/>
+<span class="text-xl font-extrabold tracking-tight text-slate-900">
+          SportKurse<span class="text-teal-500">Live</span><span class="text-slate-900">.de</span>
+</span>
+</a>
+<!-- Menu Button -->
+<button aria-label="Menü öffnen" class="w-10 h-10 flex items-center justify-center rounded-xl bg-slate-50 border border-slate-200/80 text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-teal-500" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<line x1="4" x2="20" y1="7" y2="7"></line>
+<line x1="4" x2="20" y1="12" y2="12"></line>
+<line x1="4" x2="20" y1="17" y2="17"></line>
+</svg>
+</button>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- Back Navigation Link -->
+<div class="max-w-xl mx-auto w-full px-4 pt-4">
+<a class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-teal-600 transition-colors" href="../index.html">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+      Zurück zur Kursübersicht
+    </a>
+</div>
+<!-- BEGIN: HeroCheckoutSection -->
+<main class="flex-grow max-w-xl mx-auto w-full px-4 py-3 pb-12">
+<!-- Header Section -->
+<section class="space-y-3 mb-6" data-purpose="booking-header">
+<!-- Badge §20 SGB V -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100/70 border border-emerald-200 text-emerald-800 text-xs font-semibold tracking-wide">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        ZPP Zertifiziert nach § 20 SGB V
+      </div>
+<h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Kursplatz verbindlich <span class="bg-gradient-to-r from-emerald-500 via-teal-500 to-blue-500 bg-clip-text text-transparent">sichern</span>
+</h1>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+        Bis zu 100% Kostenübernahme durch deine Krankenkasse. Du erhältst nach Abschluss automatisch die offizielle Teilnahmebescheinigung.
+      </p>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-2 pt-1 text-center" data-purpose="trust-bar">
+<div class="bg-white border border-slate-100 rounded-xl p-2.5 shadow-xs flex flex-col items-center">
+<svg class="w-5 h-5 text-teal-600 mb-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="text-[11px] font-semibold text-slate-700">100% Online</span>
+<span class="text-[9px] text-slate-400">Via Zoom Live</span>
+</div>
+<div class="bg-white border border-slate-100 rounded-xl p-2.5 shadow-xs flex flex-col items-center">
+<svg class="w-5 h-5 text-emerald-600 mb-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="text-[11px] font-semibold text-slate-700">ZPP-Geprüft</span>
+<span class="text-[9px] text-slate-400">§ 20 SGB V</span>
+</div>
+<div class="bg-white border border-slate-100 rounded-xl p-2.5 shadow-xs flex flex-col items-center">
+<svg class="w-5 h-5 text-blue-600 mb-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="text-[11px] font-semibold text-slate-700">Gratis Band</span>
+<span class="text-[9px] text-slate-400">Postversand</span>
+</div>
+</div>
+</section>
+<!-- END: HeroCheckoutSection -->
+<!-- BEGIN: BookingForm -->
+<form class="space-y-6" id="course-booking-form" onsubmit="event.preventDefault(); alert('Vielen Dank! Deine Anmeldung wird verarbeitet.');">
+<!-- STEP 1: Kursauswahl & Starttermin -->
+<section class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-sm" data-purpose="step-course-selection">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-6 h-6 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center">1</span>
+<h2 class="text-base font-bold text-slate-900">Kurs &amp; Starttermin auswählen</h2>
+</div>
+<div class="space-y-3">
+<!-- Option 1: Rückenfit -->
+<div>
+<input checked="" class="hidden custom-radio" id="kurs_1" name="selected_course" type="radio" value="rueckenfit"/>
+<label class="relative block p-3.5 rounded-xl border-2 border-slate-200 cursor-pointer transition-all hover:border-teal-200 bg-white" for="kurs_1">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800">Bestseller</span>
+<p class="font-bold text-sm text-slate-900">Rückenfit</p>
+<p class="text-xs text-slate-500 flex items-center gap-1">
+<svg class="w-3.5 h-3.5 text-teal-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    10 Einheiten à 60 Min • Live via Zoom
+                  </p>
+</div>
+<div class="text-right">
+<span class="text-base font-bold text-slate-900">149,00 €</span>
+<span class="block text-[10px] text-emerald-600 font-semibold">bis zu 100% Erstattung</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Option 2: Rückenfit mit Pilates -->
+<div>
+<input class="hidden custom-radio" id="kurs_2" name="selected_course" type="radio" value="rueckenfit_pilates"/>
+<label class="relative block p-3.5 rounded-xl border-2 border-slate-200 cursor-pointer transition-all hover:border-teal-200 bg-white" for="kurs_2">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="font-bold text-sm text-slate-900">Rückenfit mit Pilateselementen</p>
+<p class="text-xs text-slate-500 flex items-center gap-1">
+<svg class="w-3.5 h-3.5 text-teal-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    10 Einheiten à 60 Min • Live via Zoom
+                  </p>
+</div>
+<div class="text-right">
+<span class="text-base font-bold text-slate-900">149,00 €</span>
+<span class="block text-[10px] text-emerald-600 font-semibold">bis zu 100% Erstattung</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Option 3: Ganzkörpertraining -->
+<div>
+<input class="hidden custom-radio" id="kurs_3" name="selected_course" type="radio" value="ganzkoerper"/>
+<label class="relative block p-3.5 rounded-xl border-2 border-slate-200 cursor-pointer transition-all hover:border-teal-200 bg-white" for="kurs_3">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<p class="font-bold text-sm text-slate-900">Ganzkörpertraining</p>
+<p class="text-xs text-slate-500 flex items-center gap-1">
+<svg class="w-3.5 h-3.5 text-teal-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    10 Einheiten à 60 Min • Live via Zoom
+                  </p>
+</div>
+<div class="text-right">
+<span class="text-base font-bold text-slate-900">149,00 €</span>
+<span class="block text-[10px] text-emerald-600 font-semibold">bis zu 100% Erstattung</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Termin-Auswahl Dropdown -->
+<div class="mt-4 pt-3 border-t border-slate-100">
+<label class="block text-xs font-semibold text-slate-700 mb-1.5" for="start_termin">Feste Kursgruppe / Wochentag auswählen:</label>
+<div class="relative">
+<select class="w-full text-xs font-medium rounded-xl border-slate-200 bg-slate-50/50 py-2.5 px-3 focus:border-teal-500 focus:ring-teal-500" id="start_termin" name="start_termin">
+<option value="di_1830">Dienstags 18:30 Uhr (Start: 07. April 2026) - 4 freie Plätze</option>
+<option value="do_1900">Donnerstags 19:00 Uhr (Start: 09. April 2026) - fast voll</option>
+<option value="sa_1000">Samstags 10:00 Uhr (Start: 11. April 2026) - 6 freie Plätze</option>
+</select>
+</div>
+<p class="text-[11px] text-slate-400 mt-1.5 flex items-center gap-1">
+<svg class="w-3.5 h-3.5 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            Verpasste Stunden können unkompliziert nachgeholt werden.
+          </p>
+</div>
+</section>
+<!-- STEP 2: Krankenkassen-Angabe -->
+<section class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-sm" data-purpose="step-health-insurance">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-6 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center">2</span>
+<h2 class="text-base font-bold text-slate-900">Krankenkasse für Erstattung</h2>
+</div>
+<p class="text-xs text-slate-500 mb-3">
+          Wähle deine Krankenkasse, damit wir die Teilnahmebescheinigung vorab passend für deinen Einreichungsprozess anlegen können:
+        </p>
+<div class="space-y-3">
+<select class="w-full text-xs font-medium rounded-xl border-slate-200 bg-white py-2.5 px-3 focus:border-teal-500 focus:ring-teal-500" id="krankenkasse" name="krankenkasse">
+<option value="tk">Techniker Krankenkasse (TK) - erstattet mind. 80-100%</option>
+<option value="barmer">BARMER - erstattet bis zu 100%</option>
+<option value="dak">DAK Gesundheit - bis zu 100% Erstattung</option>
+<option value="aok">AOK (alle Bundesländer) - mind. 80-100%</option>
+<option value="ikk">IKK classic / Südwest / gesund plus</option>
+<option value="kkh">KKH Kaufmännische Krankenkasse</option>
+<option value="hkk">hkk Krankenkasse</option>
+<option value="bkk">BKK (z.B. Mobil Oil, VBU, BMW etc.)</option>
+<option value="andere">Andere gesetzliche Krankenkasse</option>
+<option value="pkv">Privat versichert / Selbstzahler</option>
+</select>
+<!-- Dynamische Infobox Erstattung -->
+<div class="p-3 bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200/60 rounded-xl flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center flex-shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<p class="text-xs font-bold text-emerald-900">Voraussichtliche Erstattung: Bis zu 100%</p>
+<p class="text-[11px] text-emerald-700">Nach Kursabschluss reichst du die Bescheinigung ein – oft <strong class="underline">0,00 € Eigenanteil</strong>.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 3: Persönliche Teilnehmerdaten -->
+<section class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-sm" data-purpose="step-personal-data">
+<div class="flex items-center gap-2 mb-4">
+<span class="w-6 h-6 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center">3</span>
+<h2 class="text-base font-bold text-slate-900">Teilnehmerdaten</h2>
+</div>
+<div class="space-y-3.5">
+<!-- Anrede -->
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1.5">Anrede</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="border border-slate-200 rounded-xl p-2 text-center text-xs font-medium cursor-pointer hover:border-teal-400 has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50">
+<input checked="" class="hidden" name="anrede" type="radio" value="frau"/> Frau
+              </label>
+<label class="border border-slate-200 rounded-xl p-2 text-center text-xs font-medium cursor-pointer hover:border-teal-400 has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50">
+<input class="hidden" name="anrede" type="radio" value="herr"/> Herr
+              </label>
+<label class="border border-slate-200 rounded-xl p-2 text-center text-xs font-medium cursor-pointer hover:border-teal-400 has-[:checked]:border-teal-600 has-[:checked]:bg-teal-50">
+<input class="hidden" name="anrede" type="radio" value="divers"/> Divers
+              </label>
+</div>
+</div>
+<!-- Name & Vorname -->
+<div class="grid grid-cols-2 gap-2.5">
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1" for="first_name">Vorname *</label>
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="first_name" placeholder="Anna" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1" for="last_name">Nachname *</label>
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="last_name" placeholder="Müller" required="" type="text"/>
+</div>
+</div>
+<!-- E-Mail & Telefon -->
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1" for="email">E-Mail-Adresse *</label>
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="email" placeholder="anna.mueller@beispiel.de" required="" type="email"/>
+<span class="text-[10px] text-slate-400">Hierhin senden wir deine Zoom-Zugangsdaten.</span>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1" for="birthdate">Geburtsdatum *</label>
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500 text-slate-600" id="birthdate" required="" type="date"/>
+<span class="text-[9px] text-slate-400">Vorgabe der Krankenkassen</span>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1" for="phone">Mobiltelefon <span class="font-normal text-slate-400">(opt.)</span></label>
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="phone" placeholder="0171 1234567" type="tel"/>
+</div>
+</div>
+<!-- Versandadresse für das Gratis-Band -->
+<div class="pt-2 border-t border-slate-100">
+<span class="text-xs font-semibold text-slate-800 block mb-2">Versandadresse (für dein kostenloses Trainingsband):</span>
+<div class="space-y-2">
+<div class="grid grid-cols-3 gap-2">
+<div class="col-span-2">
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="street" placeholder="Straße" required="" type="text"/>
+</div>
+<div>
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="street_no" placeholder="Hausnr." required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div>
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="zip" placeholder="PLZ" required="" type="text"/>
+</div>
+<div class="col-span-2">
+<input class="w-full text-xs rounded-xl border-slate-200 py-2 px-3 focus:border-teal-500 focus:ring-teal-500" id="city" placeholder="Wohnort" required="" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP 4: Abrechnung & Zahlungsart -->
+<section class="bg-white rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-sm" data-purpose="step-payment">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-6 rounded-full bg-teal-500 text-white text-xs font-bold flex items-center justify-center">4</span>
+<h2 class="text-base font-bold text-slate-900">Zusammenfassung &amp; Bezahlung</h2>
+</div>
+<!-- Preisübersicht Box -->
+<div class="rounded-xl bg-slate-50 p-3.5 border border-slate-200/70 space-y-2 text-xs mb-4">
+<div class="flex justify-between text-slate-600">
+<span class="">Präventionskurs (10x 60 Min Live):</span>
+<span class="font-medium text-slate-900">149,00 €</span>
+</div>
+<div class="flex justify-between text-slate-600">
+<span class="flex items-center gap-1">
+              Gratis Theraband &amp; Versand:
+              <span class="text-[10px] bg-emerald-100 text-emerald-700 font-bold px-1.5 py-0.2 rounded">Geschenk</span>
+</span>
+<span class="font-medium text-emerald-600">0,00 €</span>
+</div>
+<div class="border-t border-slate-200 pt-2 flex justify-between font-bold text-slate-900 text-sm">
+<span class="">Jetzt zu zahlender Betrag:</span>
+<span class="text-teal-600">149,00 €</span>
+</div>
+<div class="bg-emerald-50 border border-emerald-200/50 rounded-lg p-2 text-[11px] text-emerald-800 flex justify-between items-center font-medium">
+<span class="">Mögliche Erstattung Kasse:</span>
+<span class="font-bold">- bis zu 149,00 €</span>
+</div>
+</div>
+<!-- Zahlungsarten -->
+<div class="space-y-2 mb-4">
+<label class="block text-xs font-semibold text-slate-700">Zahlungsmethode wählen:</label>
+<!-- PayPal -->
+<label class="flex items-center justify-between p-3 border rounded-xl cursor-pointer hover:bg-slate-50 transition border-teal-500 bg-teal-50/40">
+<div class="flex items-center gap-2.5">
+<input checked="" class="text-teal-600 focus:ring-teal-500" name="payment_method" type="radio" value="paypal"/>
+<span class="text-xs font-bold text-slate-800">PayPal</span>
+</div>
+<span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">Express / Käuferschutz</span>
+</label>
+<!-- SEPA / Lastschrift -->
+<label class="flex items-center justify-between p-3 border rounded-xl cursor-pointer hover:bg-slate-50 transition border-slate-200">
+<div class="flex items-center gap-2.5">
+<input class="text-teal-600 focus:ring-teal-500" name="payment_method" type="radio" value="sepa"/>
+<span class="text-xs font-semibold text-slate-800">SEPA Lastschrift</span>
+</div>
+<span class="text-[11px] text-slate-500">Bequem abbuchen</span>
+</label>
+<!-- Kreditkarte -->
+<label class="flex items-center justify-between p-3 border rounded-xl cursor-pointer hover:bg-slate-50 transition border-slate-200">
+<div class="flex items-center gap-2.5">
+<input class="text-teal-600 focus:ring-teal-500" name="payment_method" type="radio" value="card"/>
+<span class="text-xs font-semibold text-slate-800">Kreditkarte (Mastercard / Visa)</span>
+</div>
+<span class="text-[11px] text-slate-400">3D Secure</span>
+</label>
+<!-- Klarna / Rechnung -->
+<label class="flex items-center justify-between p-3 border rounded-xl cursor-pointer hover:bg-slate-50 transition border-slate-200">
+<div class="flex items-center gap-2.5">
+<input class="text-teal-600 focus:ring-teal-500" name="payment_method" type="radio" value="klarna"/>
+<span class="text-xs font-semibold text-slate-800">Klarna (Später bezahlen)</span>
+</div>
+<span class="text-[11px] text-pink-600 font-medium">Rechnung</span>
+</label>
+</div>
+<!-- AGB & ZPP Einverständnis -->
+<div class="space-y-2 pt-2 border-t border-slate-100">
+<label class="flex items-start gap-2 text-[11px] text-slate-600 cursor-pointer">
+<input class="rounded border-slate-300 text-teal-600 focus:ring-teal-500 mt-0.5" required="" type="checkbox"/>
+<span class="">Ich habe die <a class="text-teal-600 underline" href="../pages/sportkurselive.de_allgemeine_gesch_ftsbedingungen.html">AGB</a> und <a class="text-teal-600 underline" href="../pages/sportkurselive.de_datenschutzerkl_rung.html">Datenschutzbestimmungen</a> gelesen und akzeptiert.</span>
+</label>
+<label class="flex items-start gap-2 text-[11px] text-slate-600 cursor-pointer">
+<input class="rounded border-slate-300 text-teal-600 focus:ring-teal-500 mt-0.5" required="" type="checkbox"/>
+<span class="">Ich bestätige, dass ich für den Erhalt der ZPP-Erstattung an mindestens 80% (8 von 10) Kurseinheiten aktiv online teilnehmen muss.</span>
+</label>
+</div>
+</section>
+<!-- BEGIN: SubmitCTA -->
+<div class="pt-2" data-purpose="booking-cta">
+<a class="w-full group relative flex items-center justify-center gap-2 py-4 px-6 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-blue-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-teal-500/25 hover:shadow-xl hover:shadow-teal-500/35 active:scale-[0.99] transition-all" href="sportkurselive.de_buchung_anmeldung.html">
+<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="">Jetzt kostenpflichtig anmelden &amp; Platz sichern</span>
+</a>
+<!-- Security Trust Note -->
+<div class="flex items-center justify-center gap-3 text-[11px] text-slate-500 mt-3">
+<span class="inline-flex items-center gap-1">
+<svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+</svg>
+            SSL 256-Bit Verschlüsselt
+          </span>
+<span class="">•</span>
+<span class="">Offiziell zertifizierter Präventionskurs</span>
+</div>
+</div>
+<!-- END: SubmitCTA -->
+</form>
+<!-- END: BookingForm -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-black text-white pt-10 pb-8 mt-12 border-t border-slate-900" data-purpose="site-footer">
+<div class="max-w-xl mx-auto px-4">
+<!-- Footer Logo & Cert Badge -->
+<div class="flex items-center justify-between pb-6 border-b border-neutral-800">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-teal-500 flex items-center justify-center font-bold text-slate-950 text-sm">
+            S
+          </div>
+<span class="text-lg font-bold tracking-tight text-white">
+            SportKurse<span class="text-teal-400">Live</span>.de
+          </span>
+</div>
+<span class="px-2.5 py-1 text-xs font-semibold rounded border border-emerald-500/40 bg-emerald-950/60 text-emerald-400">
+          ZPP zertifiziert
+        </span>
+</div>
+<!-- About Description -->
+<div class="py-6 border-b border-neutral-800">
+<p class="text-xs font-bold text-white mb-2 uppercase tracking-wider">Über das Konzept</p>
+<p class="text-xs text-neutral-400 leading-relaxed">
+          SportKurseLive.de bietet qualitätsgeprüfte Präventionstrainings für einen gesunden Rücken und ganzheitliche Fitness – live und interaktiv von überall. Zertifiziert nach § 20 SGB V.
+        </p>
+</div>
+<!-- Navigation & Copyright -->
+<div class="pt-6 space-y-4 text-xs text-neutral-400">
+<nav class="flex flex-wrap gap-x-4 gap-y-2">
+<a class="hover:text-teal-400 transition-colors" href="../pages/sportkurselive.de_impressum.html">Impressum</a>
+<a class="hover:text-teal-400 transition-colors" href="../pages/sportkurselive.de_datenschutzerkl_rung.html">Datenschutz</a>
+<a class="hover:text-teal-400 transition-colors" href="../pages/sportkurselive.de_allgemeine_gesch_ftsbedingungen.html">AGB</a>
+<a class="hover:text-teal-400 transition-colors" href="sportkurselive.de_automatische_erstattung.html">Krankenkassen</a>
+</nav>
+<p class="text-[11px] text-neutral-500">
+          © 2026 SportKurseLive.de • Alle Rechte vorbehalten.
+        </p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveHandlers -->
+<script data-purpose="event-handlers">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Highlight selected payment method
+      const paymentInputs = document.querySelectorAll('input[name="payment_method"]');
+      paymentInputs.forEach(input => {
+        input.addEventListener('change', () => {
+          paymentInputs.forEach(el => {
+            const container = el.closest('label');
+            if (el.checked) {
+              container.classList.add('border-teal-500', 'bg-teal-50/40');
+              container.classList.remove('border-slate-200');
+            } else {
+              container.classList.remove('border-teal-500', 'bg-teal-50/40');
+              container.classList.add('border-slate-200');
+            }
+          });
+
+            // Course selection highlighting
+            handleRadioGroup('course', 
+                ['border-emerald-500', 'bg-emerald-50'], 
+                ['border-slate-200', 'hover:border-emerald-300']
+            );
+
+            // Payment selection highlighting
+            handleRadioGroup('payment', 
+                ['border-emerald-500', 'bg-emerald-50'], 
+                ['border-slate-200', 'hover:border-emerald-300']
+            );
+        });
+      });
+    });
+  </script>
+<!-- END: InteractiveHandlers -->
+</body></html>
+</body>
+</html>

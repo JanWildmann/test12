@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-[#f8fafc]" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kursplatz sichern | SportKurseLive.de</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#14b8a6',
+              green: '#22c55e',
+              blue: '#3b82f6',
+              dark: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="typography">
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+<style data-purpose="layout">
+    .custom-radio:checked + label {
+      border-color: #14b8a6;
+      background-color: #f0fdfa;
+    }
+    .custom-radio:checked + label .check-icon {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/></head>
+<body class="min-h-full flex flex-col text-slate-800 antialiased selection:bg-teal-100">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-40 bg-white border-b border-slate-100 shadow-sm" data-purpose="site-header">
+<div class="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
+<!-- Logo Container -->
+<a aria-label="SportKurseLive.de Startseite" class="flex items-center gap-2.5 focus:outline-none" href="../index.html">
+<img alt="SportKurseLive Rücken Logo" class="w-10 h-10 rounded-xl shadow-md shadow-teal-500/20 flex-shrink-0" src="../assets/sportkurselive_r_cken_logo.png"/>
+<span class="text-xl font-extrabold tracking-tight text-slate-900">
+          SportKurse<span class="text-teal-500">Live</span><span class="text-slate-900">.de</span>
+</span>
+</a>
+<!-- Menu Button -->
+<button aria-label="Menü öffnen" class="w-10 h-10 flex items-center justify-center rounded-xl bg-slate-50 border border-slate-200/80 text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-teal-500" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+<line x1="4" x2="20" y1="7" y2="7"></line>
+<line x1="4" x2="20" y1="12" y2="12"></line>
+<line x1="4" x2="20" y1="17" y2="17"></line>
+</svg>
+</button>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- Back Navigation Link -->
+<div class="max-w-xl mx-auto w-full px-4 pt-4">
+<a class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-teal-600 transition-colors" href="../index.html">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+      Zurück zur Kursübersicht
+    </a>
+</div>
+<!-- BEGIN: HeroCheckoutSection -->
+<main class="flex-grow max-w-xl mx-auto w-full px-4 py-3 pb-12"><div class="flex flex-col w-full space-y-4 text-slate-800 antialiased">
+<!-- Brand Header Bar -->
+<div class="flex items-center justify-between bg-white rounded-2xl px-4 py-3 shadow-sm shadow-slate-100">
+<div class="flex items-center gap-3">
+<img alt="SportKurseLive Logo" class="w-10 h-10 rounded-xl object-contain shadow-sm shadow-emerald-500/10" src="../assets/sportkurselive_r_cken_logo.png"/>
+<div class="flex flex-col">
+<span class="text-base font-extrabold tracking-tight text-slate-900 leading-tight">
+          SportKurse<span class="text-emerald-500">Live</span>.de
+        </span>
+<span class="text-[11px] font-medium text-slate-400">ZPP-Zertifizierte Prävention</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+      Platz Garantiert
+    </span>
+</div>
+<!-- Celebratory Hero Banner -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-white via-emerald-50/40 to-blue-50/30 p-6 shadow-sm shadow-slate-100 text-center">
+<!-- Decorative Floating Orbs / Ambient Light -->
+<div class="pointer-events-none absolute -top-8 -right-8 w-32 h-32 rounded-full bg-emerald-400/15 blur-2xl"></div>
+<div class="pointer-events-none absolute -bottom-10 -left-10 w-36 h-36 rounded-full bg-blue-500/10 blur-2xl"></div>
+<!-- Animated Badge -->
+<div class="relative mx-auto mb-4 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-400 text-white shadow-lg shadow-emerald-500/25">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-500"></span>
+</span>
+</div>
+<!-- Headline & Confirmation Text -->
+<h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight mb-2">
+      Buchung erfolgreich bestätigt!
+    </h1>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md mx-auto mb-4">
+      Herzlich willkommen! Dein Kursplatz für <strong class="text-slate-900 font-semibold">„Rückenfit – Live Online“</strong> ist verbindlich reserviert. Eine Bestätigung &amp; Rechnung wurde an <span class="font-semibold text-emerald-700 underline decoration-emerald-300 underline-offset-2">anna.mueller@beispiel.de</span> gesendet.
+    </p>
+<!-- Reference Pill -->
+<div class="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full shadow-xs">
+<span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Buchungsnummer:</span>
+<code class="text-xs font-bold text-slate-900 tracking-wider">#SKL-2026-8942</code>
+<button class="text-slate-400 hover:text-emerald-600 active:scale-95 transition-transform" onclick="navigator.clipboard?.writeText('#SKL-2026-8942')" title="Kopieren" type="button">
+<span class="material-symbols-outlined text-sm align-middle">content_copy</span>
+</button>
+</div>
+</section>
+<!-- Summary Card (Buchungsdetails) -->
+<section class="bg-white rounded-2xl p-5 shadow-sm shadow-slate-100 space-y-4">
+<div class="flex items-center justify-between pb-3 border-b-0">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+</div>
+<h2 class="text-sm font-bold text-slate-900">Buchungsdetails</h2>
+</div>
+<span class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">verified</span>
+        Bezahlt via PayPal
+      </span>
+</div>
+<!-- Detail Rows -->
+<div class="space-y-3 text-xs sm:text-sm">
+<!-- Kurs -->
+<div class="flex items-start justify-between gap-3 bg-slate-50/70 p-3 rounded-xl">
+<span class="text-slate-500 font-medium shrink-0">Gebuchter Kurs</span>
+<span class="text-right font-semibold text-slate-900">Rückenfit (10 Einheiten à 60 Min. via Zoom Live)</span>
+</div>
+<!-- Gruppe & Start -->
+<div class="flex items-center justify-between gap-3 bg-slate-50/70 p-3 rounded-xl">
+<span class="text-slate-500 font-medium shrink-0">Termin &amp; Start</span>
+<span class="text-right font-semibold text-slate-900">Dienstags 18:30 Uhr <span class="text-emerald-600 font-bold block sm:inline">(Start: 07. April 2026)</span></span>
+</div>
+<!-- Trainer -->
+<div class="flex items-center justify-between gap-3 bg-slate-50/70 p-3 rounded-xl">
+<span class="text-slate-500 font-medium shrink-0">Kursleitung</span>
+<span class="text-right font-semibold text-slate-900">Jan Wildmann <span class="text-slate-400 font-normal block sm:inline">(Staatl. gepr. Gymnastiklehrer)</span></span>
+</div>
+<!-- Betrag & Erstattung -->
+<div class="p-3.5 rounded-xl bg-emerald-50/60 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="text-xs font-semibold text-slate-700">Gesamtbetrag bezahlt</span>
+<span class="text-base font-extrabold text-slate-900">149,00 €</span>
+</div>
+<div class="flex items-center gap-1.5 text-[11px] text-emerald-800 font-medium">
+<span class="material-symbols-outlined text-sm shrink-0">format_image_left</span>
+<span>Bis zu 100% Kassen-Erstattung (nach Kursabschluss)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Action Buttons (Calendar & PDF) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+<button class="w-full flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-slate-900 text-white font-semibold text-xs sm:text-sm shadow-sm hover:bg-slate-800 active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-lg text-emerald-400">calendar_add_on</span>
+<span>Termine in Kalender eintragen</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-white text-slate-700 font-semibold text-xs sm:text-sm shadow-sm hover:bg-slate-50 active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-lg text-blue-600">download</span>
+<span>Bestätigung &amp; Rechnung (PDF)</span>
+</button>
+</section>
+<!-- Next Steps Roadmap (Timeline) -->
+<section class="bg-white rounded-2xl p-5 shadow-sm shadow-slate-100 space-y-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-base">alt_route</span>
+</div>
+<h2 class="text-sm font-bold text-slate-900">Deine nächsten Schritte</h2>
+</div>
+<span class="text-[11px] font-semibold text-slate-400">4 einfache Etappen</span>
+</div>
+<!-- Timeline Items -->
+<div class="relative pl-6 space-y-5 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-100">
+<!-- Step 1 -->
+<div class="relative group">
+<span class="absolute -left-6 top-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 text-white text-[10px] font-bold shadow-xs">1</span>
+<div class="bg-slate-50/60 p-3.5 rounded-xl transition-all">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-base text-emerald-600">local_shipping</span>
+<h3 class="text-xs sm:text-sm font-bold text-slate-900">Trainingsband per Post</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+            Dein kostenloses Widerstandsband wurde für den Versand vorbereitet und kommt in 2–3 Werktagen bequem bei dir zu Hause an.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative group">
+<span class="absolute -left-6 top-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 text-white text-[10px] font-bold shadow-xs">2</span>
+<div class="bg-slate-50/60 p-3.5 rounded-xl transition-all">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-base text-blue-600">videocam</span>
+<h3 class="text-xs sm:text-sm font-bold text-slate-900">Zoom-Zugangsdaten</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+            Rechtzeitig 24 Stunden vor jeder Live-Einheit erhältst du deinen persönlichen Zoom-Link per E-Mail und SMS.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative group">
+<span class="absolute -left-6 top-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 text-white text-[10px] font-bold shadow-xs">3</span>
+<div class="bg-slate-50/60 p-3.5 rounded-xl transition-all">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-base text-emerald-600">workspace_premium</span>
+<h3 class="text-xs sm:text-sm font-bold text-slate-900">80% Anwesenheit &amp; Bescheinigung</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+            Nimm an mindestens 8 von 10 Live-Terminen teil. Deine offizielle ZPP-Teilnahmebescheinigung nach § 20 SGB V wird dir direkt im Anschluss automatisch per PDF ausgestellt.
+          </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative group">
+<span class="absolute -left-6 top-0.5 flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 text-white text-[10px] font-bold shadow-xs">4</span>
+<div class="bg-emerald-50/50 p-3.5 rounded-xl transition-all">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-base text-emerald-600">payments</span>
+<h3 class="text-xs sm:text-sm font-bold text-slate-900">Erstattung erhalten</h3>
+</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+            Reiche das PDF per App bei deiner Krankenkasse (z. B. TK, Barmer, DAK, AOK) ein und erhalte bis zu 149 € direkt zurück auf dein Konto!
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Support & WhatsApp Box -->
+<section class="bg-gradient-to-br from-emerald-600 to-teal-700 text-white rounded-2xl p-5 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-2xl text-emerald-200">chat</span>
+<h3 class="text-sm font-bold">Fragen oder technische Hilfe?</h3>
+</div>
+<span class="text-[10px] font-semibold bg-emerald-800/60 px-2 py-0.5 rounded-full text-emerald-100">Live-Support</span>
+</div>
+<p class="text-xs text-emerald-100 leading-relaxed">
+      Fragen zu deiner Buchung oder den Terminen? Schreib uns jederzeit persönlich per WhatsApp oder E-Mail:
+    </p>
+<div class="flex flex-col sm:flex-row gap-2 pt-1">
+<a class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-white text-emerald-800 text-xs font-bold hover:bg-emerald-50 active:scale-98 transition-all" href="https://wa.me/4915117834737" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">forum</span>
+<span>WhatsApp: +49 151 17834737</span>
+</a>
+<a class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-emerald-700/80 text-white text-xs font-semibold hover:bg-emerald-700 active:scale-98 transition-all" href="mailto:hallo@sportkurselive.de">
+<span class="material-symbols-outlined text-base">mail</span>
+<span>hallo@sportkurselive.de</span>
+</a>
+</div>
+</section>
+<!-- Return to Homepage Link -->
+<div class="text-center pt-2 pb-4">
+<a class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-500 hover:text-emerald-600 transition-colors py-2 px-4 rounded-xl hover:bg-slate-100/60" href="../index.html">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Zurück zur Startseite</span>
+</a>
+</div>
+</div></main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-black text-white pt-10 pb-8 mt-12 border-t border-slate-900" data-purpose="site-footer">
+<div class="max-w-xl mx-auto px-4">
+<!-- Footer Logo & Cert Badge -->
+<div class="flex items-center justify-between pb-6 border-b border-neutral-800">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-teal-500 flex items-center justify-center font-bold text-slate-950 text-sm">
+            S
+          </div>
+<span class="text-lg font-bold tracking-tight text-white">
+            SportKurse<span class="text-teal-400">Live</span>.de
+          </span>
+</div>
+<span class="px-2.5 py-1 text-xs font-semibold rounded border border-emerald-500/40 bg-emerald-950/60 text-emerald-400">
+          ZPP zertifiziert
+        </span>
+</div>
+<!-- About Description -->
+<div class="py-6 border-b border-neutral-800">
+<p class="text-xs font-bold text-white mb-2 uppercase tracking-wider">Über das Konzept</p>
+<p class="text-xs text-neutral-400 leading-relaxed">
+          SportKurseLive.de bietet qualitätsgeprüfte Präventionstrainings für einen gesunden Rücken und ganzheitliche Fitness – live und interaktiv von überall. Zertifiziert nach § 20 SGB V.
+        </p>
+</div>
+<!-- Navigation & Copyright -->
+<div class="pt-6 space-y-4 text-xs text-neutral-400">
+<nav class="flex flex-wrap gap-x-4 gap-y-2">
+<a class="hover:text-teal-400 transition-colors" href="../pages/sportkurselive.de_impressum.html">Impressum</a>
+<a class="hover:text-teal-400 transition-colors" href="../pages/sportkurselive.de_datenschutzerkl_rung.html">Datenschutz</a>
+<a class="hover:text-teal-400 transition-colors" href="../pages/sportkurselive.de_allgemeine_gesch_ftsbedingungen.html">AGB</a>
+<a class="hover:text-teal-400 transition-colors" href="sportkurselive.de_automatische_erstattung.html">Krankenkassen</a>
+</nav>
+<p class="text-[11px] text-neutral-500">
+          © 2026 SportKurseLive.de • Alle Rechte vorbehalten.
+        </p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveHandlers -->
+<script data-purpose="event-handlers">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Highlight selected payment method
+      const paymentInputs = document.querySelectorAll('input[name="payment_method"]');
+      paymentInputs.forEach(input => {
+        input.addEventListener('change', () => {
+          paymentInputs.forEach(el => {
+            const container = el.closest('label');
+            if (el.checked) {
+              container.classList.add('border-teal-500', 'bg-teal-50/40');
+              container.classList.remove('border-slate-200');
+            } else {
+              container.classList.remove('border-teal-500', 'bg-teal-50/40');
+              container.classList.add('border-slate-200');
+            }
+          });
+        });
+      });
+    });
+  </script>
+<!-- END: InteractiveHandlers -->
+</body></html>
